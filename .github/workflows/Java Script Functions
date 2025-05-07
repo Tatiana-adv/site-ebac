@@ -1,0 +1,18 @@
+$(document).ready(function() {
+    // Inicializar o Slick Carousel
+    $('.carousel').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        dots: true,
+        arrows: false,
+        fade: true,
+        speed: 1000
+    });
+
+    // Animação de Fade nos Modelos
+    $('.modelo').hover(function() {
+        $(this).find('h3').css('color', '#e8b01e');
+    }, function() {
+        $(this).find('h3').css('color', '#333');
+    });
+});
