@@ -1,0 +1,118 @@
+/* Reset de CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #000;
+    padding: 20px;
+}
+
+.header .logo img {
+    width: 150px;
+}
+
+.navbar {
+    float: right;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Carousel */
+.carousel {
+    max-width: 100%;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Modelos em Destaque */
+.modelos {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.modelos h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.modelos-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.modelo {
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.modelo:hover {
+    transform: scale(1.05);
+}
+
+.modelo img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.modelo h3 {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #333;
+}
+
+/* Vídeo */
+.video-section {
+    background-color: #111;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.video-section video {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
